@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation"
+		value="false" />
+	<constant name="struts.devMode" value="true" />
+
+	<!-- Add your package and namespace here -->
+	<package name="default" namespace="/" extends="struts-default">
+
+		<!--Add your actions here -->
+		<action name="markComplainAttened"
+			class="struts.MarkComplainAttened"></action>
+		<action name="insertComplain" class="struts.InsertComplain"></action>
+		<action name="borrowedBookReturned"
+			class="struts.BorrowedBookReturned"></action>
+		<action name="blockUser" class="struts.BlockUser"></action>
+		<action name="issueBook" class="struts.IssueBook"></action>
+		<action name="unblockUser" class="struts.UnblockUser"></action>
+		<action name="signUp" class="struts.SignUp"></action>
+		<action name="getCatagory" class="struts.GetCatagory"></action>
+		<action name="approveUnregisteredUser"
+			class="struts.ApproveUnregisteredUser"></action>
+		<action name="removeRow" class="struts.RemoveRow"></action>
+		<action name="extendBook" class="struts.ExtendBook"></action>
+		<action name="insertBook" class="struts.InsertBook"></action>
+		<action name="insertBookRequest"
+			class="struts.InsertBookRequest"></action>
+		<action name="updateBook" class="struts.UpdateBook"></action>
+		<action name="login" class="struts.Login">
+			<result name="success">/LibraryExpert.jsp</result>
+		</action>
+		<action name="tableAccess" class="struts.TableAccess"></action>
+		<action name="countRowsInTable" class="struts.CountRowsInTable"></action>
+		<action name="approveNewBookRequest"
+			class="struts.ApproveNewBookRequest"></action>
+		<action name="rejectNewBookRequest"
+			class="struts.RejectNewBookRequest"></action>
+		<action name="fetchRow" class="struts.FetchRow"></action>
+		<action name="countBooksInStream"
+			class="struts.CountBooksInStream"></action>
+		<action name="updateUser" class="struts.UpdateUser"></action>
+		<action name="getStream" class="struts.GetStream"></action>
+		<action name="searchBook" class="struts.SearchBook"></action>
+		<action name="logout" class="struts.Logout">
+			<result name="success">Login.jsp</result>
+		</action>
+		<!-- Actions end -->
+
+	</package>
+</struts>
+
